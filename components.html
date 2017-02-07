@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+	</head>
+	<script type = "text/jsx">
+		 var ReactClass = React.createClass({  render: function () {
+		 	return React.createElement('h1', { className: 'header' },
+		 				'React Component');
+		 } });
+		 var reactComponentElement = React.createElement(ReactClass);
+		 var reactComponent = ReactDOM.render(reactComponentElement,
+ 	document. getElementById('reactapplication'))
+
+	</script>
+
+	<body>
+		<p id = "reactapplication"></p>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+	</head>
+	<script type = "text/jsx">
+		function makeLake (e) {
+		  // Call this extremely useful function on an <img>.
+		  // The <img> will become a picture of a lake.
+		  e.target.setAttribute('src', 'lake.jpg');
+		  e.target.setAttribute('alt', 'lake');
+		}
+
+		var forest = (
+			<img
+			src="forest.jpg"
+			alt="forest"
+		    	onClick = {makeLake}/>
+		);
+
+		ReactDOM.render(forest, document.getElementById('app'));
+
+
+	</script>
+
+	<body>
+		<p id = "app"></p>
+	</body>
+</html>
